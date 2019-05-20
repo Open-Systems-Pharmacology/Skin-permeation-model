@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Favorites version="13">
+  <All>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|MW</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|log_K_ow</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Solubility S_v</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|C atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Br atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Cl atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|H atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|N atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|O atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|F atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|S atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|I atoms</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Permeant includes other elements</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Double bonds</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Triple bonds</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Rings</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Compound type</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Use experimental permeant density</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Temperature at experimental permeant density</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Experimental permeant density</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Grain class</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Boiling temperature</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Use experimental permeant water solubility</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Temperature at experimental permeant water solubility</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Experimental permeant water solubility</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Melting temperature</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Use strongest acid pKa</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Strongest acid pKa</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Use strongest base pKa</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Strongest base pKa</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Vapor pressure</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Dose</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Area of application</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Wind velocity</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Occluded vehicle</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Vehicle type</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Volatile vehicle</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Vehicle pH</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Vehicle volume</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Skin temperature</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Hydrated SC</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Skin thickness</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|In vivo</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|V_max</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|K_M</Favorite>
+  </All>
+</Favorites>
