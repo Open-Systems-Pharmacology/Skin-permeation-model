@@ -1,94 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<EventGroupBuildingBlock id="6kWAIbBrMk2_9RGXpHr0IA" name="skin_events" icon="EventGroup" bbVersion="146" version="13">
-  <Creation createdAt="5248620500032919433" createdBy="ahamadeh" creationMode="New" origin="MoBi" version="7.4.0" internalVersion="13" />
+<EventGroupBuildingBlock id="IXoicLY8hUe9wzCv46DIkQ" name="skin_events_two_doses" icon="EventGroup" bbVersion="52" version="13">
+  <Creation createdAt="5248872475995609325" createdBy="ahamadeh" creationMode="New" origin="MoBi" version="8.0" internalVersion="13" />
   <Builders>
-    <EventGroupBuilder id="SsvhUVu9OEusPQ0xvXALjA" name="Applications" icon="APPLICATIONS" mode="Logical" containerType="EventGroup">
+    <EventGroupBuilder id="pEhlQ87PNEKTgw6gOSfYnQ" name="Applications" icon="APPLICATIONS" mode="Logical" containerType="EventGroup">
       <Children>
-        <ApplicationBuilder id="-IOOFUmjbE6S0lyW10zquA" name="skin_application" icon="APPLICATION" mode="Logical" containerType="Application" moleculeName="permeant">
+        <ApplicationBuilder id="1mIBVSFiIkeDwZgjhZokQg" name="skin_application" icon="APPLICATION" mode="Logical" containerType="Application" moleculeName="permeant_compound">
           <Children>
-            <Parameter id="N67Yd_frkUKZBo8SbAvceQ" name="case_no_estimate" icon="Parameter" persistable="0" isFixedValue="0" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0">
-              <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-            </Parameter>
-            <Parameter id="3Dr2gSoaL0qTkvfqKLG4lg" name="deposit_capacity" icon="Parameter" persistable="0" isFixedValue="0" dim="Mass" quantityType="Parameter" negativeValuesAllowed="1" formula="02b7e130-2b59-4338-a3db-00743b4a8d1a" isDefault="0" displayUnit="kg">
-              <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-            </Parameter>
-            <Parameter id="j8BecTPBbkqXyX-UygN6aQ" name="prestep_dep1" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0" displayUnit="µmol">
-              <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-            </Parameter>
-            <Parameter id="zgeHvZNSGEG78MAnIHb5Tg" name="prestep_dep2" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0" displayUnit="µmol">
-              <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-            </Parameter>
-            <Parameter id="DkO55TC7_02t-FpeHhDL4A" name="prestep_dep3" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0" displayUnit="µmol">
-              <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-            </Parameter>
-            <Parameter id="Q0Prrnzyn02MdN1dfsgEMg" name="prestep_dep4" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0" displayUnit="µmol">
-              <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-            </Parameter>
-            <Parameter id="sBqidF0rqUyb-X9mageyyw" name="prestep_sp" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0" displayUnit="µmol">
-              <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-            </Parameter>
-            <Parameter id="h3TN-kB0FEK3nS6AJTowHQ" name="prestep_veh" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0" displayUnit="µmol">
-              <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-            </Parameter>
-            <EventGroupBuilder id="N4rajrw4BEuL-Woxb64fUQ" name="dose_from_spatial_structure_at_0_hours" icon="EVENTGROUP" mode="Logical" containerType="EventGroup">
+            <EventGroupBuilder id="cLdI1NQz60SITfuzUHvFPw" name="event_with_dose_mass_from_spatial_structure" icon="EVENTGROUP" mode="Logical" containerType="EventGroup">
               <Children>
-                <Parameter id="e5bY31G5ME69GcBtCfY6BA" name="Dose_amount" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" formula="bc86d0da-b68e-44dc-bf06-cfa3868332ef" isDefault="0" displayUnit="µmol">
+                <Parameter id="43JTxJkNUEa-KzhSyNIonw" name="Dose_amount" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" formula="O9UHB6WAaUOMeHdSd85esw" isDefault="0" displayUnit="µmol">
                   <Info flag="10" seq="1" ref="0" bb="2" group="143" />
                 </Parameter>
-                <Parameter id="h7N6wj5ggkiclEwmUhr9jA" name="Dose_time" icon="Parameter" persistable="0" isFixedValue="0" dim="Time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0" displayUnit="h">
+                <Parameter id="WHeyvBBfTUK8eLAOb8o_SQ" name="Dose_time" icon="Parameter" persistable="0" isFixedValue="0" dim="Time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0" displayUnit="h">
                   <Info flag="10" seq="1" ref="0" bb="2" group="143" />
                 </Parameter>
-                <EventBuilder id="CH6eiqaOmkCwVN-9qoetlQ" name="add_timed_dose" icon="OTHER" oneTime="1" formula="e7a93e38-cf6b-4018-b8d3-367d0e9ec2d0">
+                <EventBuilder id="feJeYb-um0SYcAUHdehRog" name="add_timed_dose" icon="OTHER" oneTime="1" formula="-jMIIsTA1k2_RqoAgOhODw">
                   <Assignments>
-                    <EventAssignmentBuilder id="tGfh5QFPSUGl3zVZpytfdg" name="dep1_asmt" useAsValue="1" dimension="Amount" formula="49483865-b10d-4555-8754-c0d08971f4a7">
+                    <EventAssignmentBuilder id="8kJCCtf2NEOOyRcAoBNWtw" name="dep1_asmt" useAsValue="1" dimension="Amount" formula="zQw0yJR57k-GTr_V2yI5ng">
                       <ObjectPath path="0" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="QLHChV6O-EOqwx_8yftMMQ" name="dep2_asmt" useAsValue="1" dimension="Amount" formula="04225e5b-8926-4575-b509-a3ad8d813eef">
+                    <EventAssignmentBuilder id="FB1tNbV1JkaLu3lf0SOYRA" name="dep2_asmt" useAsValue="1" dimension="Amount" formula="_Zm305ippUaluXPyYhTUDA">
                       <ObjectPath path="1" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="6Hhjlt7oUEGYEOE6F57ehQ" name="dep3_asmt" useAsValue="1" dimension="Amount" formula="4929333c-7f89-4e67-91ad-9b759fc5cf91">
+                    <EventAssignmentBuilder id="A6QV3bUzYkuKL5IHD9MdyA" name="dep3_asmt" useAsValue="1" dimension="Amount" formula="1TiwtnfnSUC9CD9C35qBxA">
                       <ObjectPath path="2" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="c8yb46XKLU6aLrtlOCy2Vg" name="dep4_asmt" useAsValue="1" dimension="Amount" formula="fab46542-dc8d-4575-b909-311edd3445fe">
+                    <EventAssignmentBuilder id="vbO6OsCcHUGrCcoRjlXN1Q" name="dep4_asmt" useAsValue="1" dimension="Amount" formula="QCGGnPbSG0C1xeflKAY20w">
                       <ObjectPath path="3" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="XYmhJ7S4dUaUDbwWde_onA" name="veh_asmt" useAsValue="1" dimension="Amount" formula="64ce7f61-de15-4c4d-81ea-a916d589b3e0">
+                    <EventAssignmentBuilder id="7myJrEGraUGzaF5HO8_syg" name="veh_asmt" useAsValue="1" dimension="Amount" formula="NNly0ORXM0Sj9bY6Qtyyfg">
                       <ObjectPath path="4" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="Wkwmji8vx0-Wvr2v_3Sd_A" name="surface_pool_asmt" useAsValue="1" dimension="Amount" formula="ead70a2d-44fa-45e6-8977-42aa1233e5d8">
+                    <EventAssignmentBuilder id="csvIB_h6GEus1oydkzZadQ" name="surface_pool_asmt" useAsValue="1" dimension="Amount" formula="VZ4_dvmZFk2axVXlGZoSGg">
                       <ObjectPath path="5" />
                     </EventAssignmentBuilder>
-                  </Assignments>
-                </EventBuilder>
-                <Parameter id="o9wI753re0Oo-91i52GqOw" name="Mass_dose_per_area" icon="Parameter" persistable="0" isFixedValue="0" dim="Mass per area" quantityType="Parameter" negativeValuesAllowed="1" formula="b2a801ec-bd0e-4b27-bed2-c1723d1449ad" isDefault="0" displayUnit="mg/m²">
-                  <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-                </Parameter>
-                <EventBuilder id="OxbTDsrzK0-qTQcZ9-PfLg" name="case_no_estimate" icon="OTHER" oneTime="1" formula="cdabd8f3-40f1-431c-bfbf-20b00bab3ee1">
-                  <Assignments>
-                    <EventAssignmentBuilder id="aYnRfggjlEqixTDZZbeD4g" name="case_no_asmt" useAsValue="1" formula="4b9b3707-1cec-4787-807c-11c552173fde">
+                    <EventAssignmentBuilder id="6WB4V6Qldk-oR-NLvyZrIA" name="follicle_bypass_SC_to_DE" useAsValue="1" dimension="Amount" formula="R53a-QnWzUi3WO2Cd78tiQ">
                       <ObjectPath path="6" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="vrfeXE5b3Eyxt6g0_X4u9Q" name="prestep_dep1_asmt" useAsValue="1" dimension="Amount" formula="eba5a8d3-ed40-416f-a89e-152422691185">
+                  </Assignments>
+                </EventBuilder>
+                <Parameter id="22E8Pel73U2em-aUOTmKWA" name="Mass_dose_per_area" icon="Parameter" persistable="0" isFixedValue="0" dim="Mass per area" quantityType="Parameter" negativeValuesAllowed="1" formula="FwX8OYige0ONwBbj2vr_1Q" isDefault="0" displayUnit="mg/m²">
+                  <Info flag="10" seq="1" ref="0" bb="2" group="143" />
+                </Parameter>
+                <EventBuilder id="VMbBoz_ahE6sILynq9bV3A" name="case_no_estimate" icon="OTHER" oneTime="1" formula="QtzndZFHx0eKuQ1VpKd1aA">
+                  <Assignments>
+                    <EventAssignmentBuilder id="uEsxTFP8mkmrUyxngZeFiQ" name="case_no_asmt" useAsValue="1" formula="OcMUIo8W8k-2ch9ClC8Htg">
                       <ObjectPath path="7" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="WxZdlUh9zEqlQ0zhXdPNhg" name="prestep_dep2_asmt" useAsValue="1" dimension="Amount" formula="27dbfb99-ac4a-496c-943e-d406cfcb32c3">
+                    <EventAssignmentBuilder id="kn_pOOaUGUKx8lHjGopLgw" name="prestep_dep1_asmt" useAsValue="1" dimension="Amount" formula="cvFsusopl0CYsz-ozEGOIw">
                       <ObjectPath path="8" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="sU6P3Ur5vkGpjQkwKUbisw" name="prestep_dep3_asmt" useAsValue="1" dimension="Amount" formula="b139073e-063b-461f-9953-deaad60791f6">
+                    <EventAssignmentBuilder id="z4NTAO2jI0-gEyoEJfWvNg" name="prestep_dep2_asmt" useAsValue="1" dimension="Amount" formula="fPnG183ifku3iGqw6pylnw">
                       <ObjectPath path="9" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="Q73Uj0C7rkmdPU8Gp6pv4g" name="prestep_dep4_asmt" useAsValue="1" dimension="Amount" formula="d7fd0866-ac77-4c8d-8166-ae3a3ee39812">
+                    <EventAssignmentBuilder id="2wcZURnIVEGPFZIpVwIGpQ" name="prestep_dep3_asmt" useAsValue="1" dimension="Amount" formula="H0sOqF2iAEO2KZ2Fj-GEDg">
                       <ObjectPath path="10" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="WozaMd8yXEGRSAWUwvkrJA" name="prestep_veh_asmt" useAsValue="1" dimension="Amount" formula="19869efd-39f8-414e-bcfb-83e99490d856">
+                    <EventAssignmentBuilder id="HfTEgpsCk0eCYJc8JYWITw" name="prestep_dep4_asmt" useAsValue="1" dimension="Amount" formula="UrXukX1xuk6fBGoFK4xJzA">
                       <ObjectPath path="11" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="kdlTjHSX9UePD-jgXP5MhA" name="prestep_sp_asmt" useAsValue="1" dimension="Amount" formula="634ea813-4ad8-4fe8-881d-550a4678e183">
+                    <EventAssignmentBuilder id="Tg7VcPIUVEa7S0_XLU_4Ww" name="prestep_veh_asmt" useAsValue="1" dimension="Amount" formula="qeAYPdfHT0OzgT_AyfQgKA">
                       <ObjectPath path="12" />
+                    </EventAssignmentBuilder>
+                    <EventAssignmentBuilder id="yNdCAnldG0CktCXykfKKNA" name="prestep_sp_asmt" useAsValue="1" dimension="Amount" formula="QC0aCAWVIkuNqzqQjHQ2AA">
+                      <ObjectPath path="13" />
                     </EventAssignmentBuilder>
                   </Assignments>
                 </EventBuilder>
-                <Parameter id="6_rkhgKzVkyXBXwkEMPSyA" name="dt" icon="Parameter" persistable="0" isFixedValue="0" dim="Time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0.0833333333333333" displayUnit="s">
+                <Parameter id="f-yfTO07vESjDLyqj06D4w" name="dt" icon="Parameter" persistable="0" isFixedValue="0" dim="Time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0.0833333333333333" displayUnit="s">
                   <Info flag="10" seq="1" ref="0" bb="2" group="143" />
                 </Parameter>
               </Children>
@@ -98,65 +77,68 @@
                 </DescriptorConditions>
               </SourceCriteria>
             </EventGroupBuilder>
-            <EventGroupBuilder id="lG5rDEB0rUu0gor27QTrJw" name="dose_added_manually_at_12_hours" icon="EVENTGROUP" mode="Logical" containerType="EventGroup">
+            <EventGroupBuilder id="jjEbZF9MCEWo4j04WTqP1A" name="event_with_dose_mass_entered_manually" icon="EVENTGROUP" mode="Logical" containerType="EventGroup">
               <Children>
-                <Parameter id="nmAyy5IV50quz2tlW5-5pg" name="Dose_amount" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" formula="bc86d0da-b68e-44dc-bf06-cfa3868332ef" isDefault="0" displayUnit="µmol">
+                <Parameter id="jdT6iSN--0ybB1Zdd1cEog" name="Dose_amount" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount" quantityType="Parameter" negativeValuesAllowed="1" formula="O9UHB6WAaUOMeHdSd85esw" isDefault="0" displayUnit="µmol">
                   <Info flag="10" seq="1" ref="0" bb="2" group="143" />
                 </Parameter>
-                <Parameter id="JpoAsRtKRUOLtS_vVDAsjA" name="Dose_time" icon="Parameter" persistable="0" isFixedValue="0" dim="Time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="720" displayUnit="h">
+                <Parameter id="k2LNUwp1VkGaL-weA5XHWw" name="Dose_time" icon="Parameter" persistable="0" isFixedValue="0" dim="Time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="720" displayUnit="h">
                   <Info flag="10" seq="1" ref="0" bb="2" group="143" />
                 </Parameter>
-                <EventBuilder id="f1Nkz2DcHkCKllVGRgbbcg" name="add_timed_dose" icon="OTHER" oneTime="1" formula="e7a93e38-cf6b-4018-b8d3-367d0e9ec2d0">
+                <EventBuilder id="_VG6IBb3LU6Qyc8Fm2VslQ" name="add_timed_dose" icon="OTHER" oneTime="1" formula="-jMIIsTA1k2_RqoAgOhODw">
                   <Assignments>
-                    <EventAssignmentBuilder id="sD-UkOw-20yKXVJcsxsytA" name="dep1_asmt" useAsValue="1" dimension="Amount" formula="49483865-b10d-4555-8754-c0d08971f4a7">
+                    <EventAssignmentBuilder id="f39owXahpEiT-UoggE12fw" name="dep1_asmt" useAsValue="1" dimension="Amount" formula="zQw0yJR57k-GTr_V2yI5ng">
                       <ObjectPath path="0" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="tLbThH9WIEysjBNT80rSAg" name="dep2_asmt" useAsValue="1" dimension="Amount" formula="04225e5b-8926-4575-b509-a3ad8d813eef">
+                    <EventAssignmentBuilder id="kj44bamzEEewF4SZfPgMwA" name="dep2_asmt" useAsValue="1" dimension="Amount" formula="_Zm305ippUaluXPyYhTUDA">
                       <ObjectPath path="1" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="mIQlaAYYKk2PZKqoMGYPIA" name="dep3_asmt" useAsValue="1" dimension="Amount" formula="4929333c-7f89-4e67-91ad-9b759fc5cf91">
+                    <EventAssignmentBuilder id="2kU-5oS4OkuRTqS1P791kg" name="dep3_asmt" useAsValue="1" dimension="Amount" formula="1TiwtnfnSUC9CD9C35qBxA">
                       <ObjectPath path="2" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="AL4B0jCDd0WR69wxvFikVg" name="dep4_asmt" useAsValue="1" dimension="Amount" formula="fab46542-dc8d-4575-b909-311edd3445fe">
+                    <EventAssignmentBuilder id="dcXDuBwZU0WTbG16nVAlNA" name="dep4_asmt" useAsValue="1" dimension="Amount" formula="QCGGnPbSG0C1xeflKAY20w">
                       <ObjectPath path="3" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="nXugkX3_rEOxPhJsC9kEqA" name="veh_asmt" useAsValue="1" dimension="Amount" formula="64ce7f61-de15-4c4d-81ea-a916d589b3e0">
+                    <EventAssignmentBuilder id="U_OTkRplc0yF_PBmQRkPKQ" name="veh_asmt" useAsValue="1" dimension="Amount" formula="NNly0ORXM0Sj9bY6Qtyyfg">
                       <ObjectPath path="4" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="jdc-IEXixEu86hUQaCbAEQ" name="surface_pool_asmt" useAsValue="1" dimension="Amount" formula="ead70a2d-44fa-45e6-8977-42aa1233e5d8">
+                    <EventAssignmentBuilder id="t3bZjBxUwkqLlGuTA0mIjQ" name="surface_pool_asmt" useAsValue="1" dimension="Amount" formula="VZ4_dvmZFk2axVXlGZoSGg">
                       <ObjectPath path="5" />
                     </EventAssignmentBuilder>
-                  </Assignments>
-                </EventBuilder>
-                <Parameter id="7B8vI_P9hkG-i4KItFx6jw" name="Mass_dose_per_area" icon="Parameter" persistable="0" isFixedValue="0" dim="Mass per area" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="1E-07" displayUnit="mg/m²">
-                  <Info flag="10" seq="1" ref="0" bb="2" group="143" />
-                </Parameter>
-                <EventBuilder id="XnklbCVArkmo0GuB82YTrQ" name="case_no_estimate" icon="OTHER" oneTime="1" formula="cdabd8f3-40f1-431c-bfbf-20b00bab3ee1">
-                  <Assignments>
-                    <EventAssignmentBuilder id="aOI13Ftoo0GW1jR3qwyeUg" name="case_no_asmt" useAsValue="1" formula="4b9b3707-1cec-4787-807c-11c552173fde">
+                    <EventAssignmentBuilder id="-COHT_hv90yo0UWDSZizqw" name="follicle_bypass_SC_to_DE" useAsValue="1" dimension="Amount" formula="R53a-QnWzUi3WO2Cd78tiQ">
                       <ObjectPath path="6" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="dpf2478mI0GORvpjeszXZA" name="prestep_dep1_asmt" useAsValue="1" dimension="Amount" formula="eba5a8d3-ed40-416f-a89e-152422691185">
+                  </Assignments>
+                </EventBuilder>
+                <Parameter id="GDy2ZfIGIUSD_3hSnOKVxQ" name="Mass_dose_per_area" icon="Parameter" persistable="0" isFixedValue="0" dim="Mass per area" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="1E-07" displayUnit="µg/cm²">
+                  <Info flag="10" seq="1" ref="0" bb="2" group="143" />
+                </Parameter>
+                <EventBuilder id="RPJmD5EKvEmLDrfxvsXfDA" name="case_no_estimate" icon="OTHER" oneTime="1" formula="QtzndZFHx0eKuQ1VpKd1aA">
+                  <Assignments>
+                    <EventAssignmentBuilder id="iu9s1a00cUmS3LBmWx9LdQ" name="case_no_asmt" useAsValue="1" formula="OcMUIo8W8k-2ch9ClC8Htg">
                       <ObjectPath path="7" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="0RDLaag-a0uknHSFvobPvA" name="prestep_dep2_asmt" useAsValue="1" dimension="Amount" formula="27dbfb99-ac4a-496c-943e-d406cfcb32c3">
+                    <EventAssignmentBuilder id="NM5kMe6JxU6VMiFJSmKoFA" name="prestep_dep1_asmt" useAsValue="1" dimension="Amount" formula="cvFsusopl0CYsz-ozEGOIw">
                       <ObjectPath path="8" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="SK-OzLYTVEeKVm88cCjKdA" name="prestep_dep3_asmt" useAsValue="1" dimension="Amount" formula="b139073e-063b-461f-9953-deaad60791f6">
+                    <EventAssignmentBuilder id="pUdrSd5odkSKa5TAH1M04w" name="prestep_dep2_asmt" useAsValue="1" dimension="Amount" formula="fPnG183ifku3iGqw6pylnw">
                       <ObjectPath path="9" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="Fpv9iED9ZE-RJE5urxzxPg" name="prestep_dep4_asmt" useAsValue="1" dimension="Amount" formula="d7fd0866-ac77-4c8d-8166-ae3a3ee39812">
+                    <EventAssignmentBuilder id="I6I1zQTTAUOdkQaWTuzLmw" name="prestep_dep3_asmt" useAsValue="1" dimension="Amount" formula="H0sOqF2iAEO2KZ2Fj-GEDg">
                       <ObjectPath path="10" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="ehNbfbUhYUqMeSKpJoSHVg" name="prestep_veh_asmt" useAsValue="1" dimension="Amount" formula="19869efd-39f8-414e-bcfb-83e99490d856">
+                    <EventAssignmentBuilder id="BjYbCqr6b06A3dQIeVBdww" name="prestep_dep4_asmt" useAsValue="1" dimension="Amount" formula="UrXukX1xuk6fBGoFK4xJzA">
                       <ObjectPath path="11" />
                     </EventAssignmentBuilder>
-                    <EventAssignmentBuilder id="i-WSYgvzXkilfIaIhqJE2g" name="prestep_sp_asmt" useAsValue="1" dimension="Amount" formula="634ea813-4ad8-4fe8-881d-550a4678e183">
+                    <EventAssignmentBuilder id="FdyTi6dHB0ORXGaN7VdghQ" name="prestep_veh_asmt" useAsValue="1" dimension="Amount" formula="qeAYPdfHT0OzgT_AyfQgKA">
                       <ObjectPath path="12" />
+                    </EventAssignmentBuilder>
+                    <EventAssignmentBuilder id="ZdXY8klqPkK287r9A224tQ" name="prestep_sp_asmt" useAsValue="1" dimension="Amount" formula="QC0aCAWVIkuNqzqQjHQ2AA">
+                      <ObjectPath path="13" />
                     </EventAssignmentBuilder>
                   </Assignments>
                 </EventBuilder>
-                <Parameter id="UlTdg5DNCUehyDMBOMB_ow" name="dt" icon="Parameter" persistable="0" isFixedValue="0" dim="Time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0.0833333333333333" displayUnit="s">
+                <Parameter id="IQj3uNlZZkiFhqu64cIa0g" name="dt" icon="Parameter" persistable="0" isFixedValue="0" dim="Time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="0" value="0.0833333333333333" displayUnit="s">
                   <Info flag="10" seq="1" ref="0" bb="2" group="143" />
                 </Parameter>
               </Children>
@@ -179,206 +161,205 @@
   </Builders>
   <FormulaCache>
     <Formulas>
-      <Formula id="bc86d0da-b68e-44dc-bf06-cfa3868332ef" name="Dose_amount_formula" dim="Amount" formula="Mass_dose_per_area*Ar/MW">
+      <Formula id="O9UHB6WAaUOMeHdSd85esw" name="Dose_amount_formula" dim="Amount" formula="Mass_dose_per_area*(1-f)*Ar/MW">
         <Paths>
-          <Path path="13" as="14" dim="15" />
-          <Path path="16" as="17" dim="18" />
-          <Path path="19" as="20" dim="21" />
+          <Path path="14" as="15" dim="16" />
+          <Path path="17" as="18" dim="19" />
+          <Path path="20" as="21" dim="22" />
+          <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="e7a93e38-cf6b-4018-b8d3-367d0e9ec2d0" name="add_timed_dose_condition" formula="Time &gt; Dose_time + dt">
+      <Formula id="zQw0yJR57k-GTr_V2yI5ng" name="dep1_asmt_formula" dim="Amount" formula="( ( case = 2 ) OR ( case = 4) ) ?  (C_sat/MW)*Ar*dx : (  (case = 3)  ? ( Dose_amount + A1 + A2 + A3 + A4     )*(C_sat*dx)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) :  A1 + ( Dose_amount / no_layers_dep_zone )       )">
+        <Paths>
+          <Path path="20" as="21" dim="22" />
+          <Path path="25" as="26" dim="27" />
+          <Path path="28" as="29" dim="30" />
+          <Path path="17" as="18" dim="19" />
+          <Path path="31" as="32" dim="33" />
+          <Path path="34" as="35" dim="30" />
+          <Path path="36" as="37" dim="30" />
+          <Path path="38" as="39" dim="40" />
+          <Path path="41" as="42" />
+          <Path path="7" as="43" />
+          <Path path="8" as="44" dim="27" />
+          <Path path="9" as="45" dim="27" />
+          <Path path="10" as="46" dim="27" />
+          <Path path="11" as="47" dim="27" />
+          <Path path="12" as="48" dim="27" />
+          <Path path="13" as="49" dim="27" />
+        </Paths>
+      </Formula>
+      <Formula id="_Zm305ippUaluXPyYhTUDA" name="dep2_asmt_formula" dim="Amount" formula="no_layers_dep_zone = 1 ? A2 : (  ( (case = 2) OR (case = 4) ) ?  (C_sat/MW)*Ar*dx : (  (case = 3)  ? ( Dose_amount + A1 + A2 + A3 + A4    )*(C_sat*dx)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) :  A2+ ( Dose_amount / no_layers_dep_zone )       ))">
+        <Paths>
+          <Path path="20" as="21" dim="22" />
+          <Path path="25" as="26" dim="27" />
+          <Path path="28" as="29" dim="30" />
+          <Path path="17" as="18" dim="19" />
+          <Path path="31" as="32" dim="33" />
+          <Path path="34" as="35" dim="30" />
+          <Path path="36" as="37" dim="30" />
+          <Path path="38" as="39" dim="40" />
+          <Path path="41" as="42" />
+          <Path path="7" as="43" />
+          <Path path="8" as="44" dim="27" />
+          <Path path="9" as="45" dim="27" />
+          <Path path="10" as="46" dim="27" />
+          <Path path="11" as="47" dim="27" />
+          <Path path="12" as="48" dim="27" />
+          <Path path="13" as="49" dim="27" />
+        </Paths>
+      </Formula>
+      <Formula id="1TiwtnfnSUC9CD9C35qBxA" name="dep3_asmt_formula" dim="Amount" formula="no_layers_dep_zone = 1 ? A3 : (  ( (case = 2) OR (case = 4) ) ?  (C_sat/MW)*Ar*dx : (  (case = 3)  ? ( Dose_amount + A1 + A2 + A3 + A4    )*(C_sat*dx)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) :  A3+ ( Dose_amount / no_layers_dep_zone )       ))">
+        <Paths>
+          <Path path="20" as="21" dim="22" />
+          <Path path="25" as="26" dim="27" />
+          <Path path="28" as="29" dim="30" />
+          <Path path="17" as="18" dim="19" />
+          <Path path="31" as="32" dim="33" />
+          <Path path="34" as="35" dim="30" />
+          <Path path="36" as="37" dim="30" />
+          <Path path="38" as="39" dim="40" />
+          <Path path="41" as="42" />
+          <Path path="7" as="43" />
+          <Path path="8" as="44" dim="27" />
+          <Path path="9" as="45" dim="27" />
+          <Path path="10" as="46" dim="27" />
+          <Path path="11" as="47" dim="27" />
+          <Path path="12" as="48" dim="27" />
+          <Path path="13" as="49" dim="27" />
+        </Paths>
+      </Formula>
+      <Formula id="QCGGnPbSG0C1xeflKAY20w" name="dep4_asmt_formula" dim="Amount" formula="no_layers_dep_zone = 1 ? A4 : (  ( (case = 2) OR (case = 4) ) ?  (C_sat/MW)*Ar*dx : (  (case = 3)  ? ( Dose_amount + A1 + A2 + A3 + A4    )*(C_sat*dx)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) :  A4 + ( Dose_amount / no_layers_dep_zone )       ))">
+        <Paths>
+          <Path path="20" as="21" dim="22" />
+          <Path path="25" as="26" dim="27" />
+          <Path path="28" as="29" dim="30" />
+          <Path path="17" as="18" dim="19" />
+          <Path path="31" as="32" dim="33" />
+          <Path path="34" as="35" dim="30" />
+          <Path path="36" as="37" dim="30" />
+          <Path path="38" as="39" dim="40" />
+          <Path path="41" as="42" />
+          <Path path="7" as="43" />
+          <Path path="8" as="44" dim="27" />
+          <Path path="9" as="45" dim="27" />
+          <Path path="10" as="46" dim="27" />
+          <Path path="11" as="47" dim="27" />
+          <Path path="12" as="48" dim="27" />
+          <Path path="13" as="49" dim="27" />
+        </Paths>
+      </Formula>
+      <Formula id="NNly0ORXM0Sj9bY6Qtyyfg" name="veh_asmt_formula" dim="Amount" formula="(  (case = 3) OR (case = 4)  ) ? ( ( case = 4 ) ?  V_sat/MW :   ( ( Dose_amount +  A1 + A2 + A3 + A4    )*(h_v*Solubility_S_v)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) ) ) : ( (case = 2) ?   ((Dose_amount  + A1 + A2 + A3 + A4  )  - (deposit_capacity /MW) )   : 0 )">
+        <Paths>
+          <Path path="50" as="51" dim="52" />
+          <Path path="20" as="21" dim="22" />
+          <Path path="25" as="26" dim="27" />
+          <Path path="28" as="29" dim="30" />
+          <Path path="17" as="18" dim="19" />
+          <Path path="53" as="54" dim="52" />
+          <Path path="34" as="35" dim="30" />
+          <Path path="36" as="37" dim="30" />
+          <Path path="38" as="39" dim="40" />
+          <Path path="41" as="42" />
+          <Path path="31" as="32" dim="33" />
+          <Path path="7" as="43" />
+          <Path path="8" as="44" dim="27" />
+          <Path path="9" as="45" dim="27" />
+          <Path path="10" as="46" dim="27" />
+          <Path path="11" as="47" dim="27" />
+          <Path path="12" as="48" dim="27" />
+          <Path path="13" as="49" dim="27" />
+        </Paths>
+      </Formula>
+      <Formula id="VZ4_dvmZFk2axVXlGZoSGg" name="surface_pool_asmt_formula" dim="Amount" formula="( (case = 3) OR (case = 4) ) ? ( ( case = 4 ) ? ( (Dose_amount + A1 + A2 + A3 + A4   ) - (deposit_capacity/MW) ) : 0 ) : 0">
+        <Paths>
+          <Path path="50" as="51" dim="52" />
+          <Path path="20" as="21" dim="22" />
+          <Path path="25" as="26" dim="27" />
+          <Path path="7" as="43" />
+          <Path path="8" as="44" dim="27" />
+          <Path path="9" as="45" dim="27" />
+          <Path path="10" as="46" dim="27" />
+          <Path path="11" as="47" dim="27" />
+          <Path path="12" as="48" dim="27" />
+          <Path path="13" as="49" dim="27" />
+        </Paths>
+      </Formula>
+      <Formula id="R53a-QnWzUi3WO2Cd78tiQ" name="follicle_bypass_SC_to_DE_formula" dim="Amount" formula="f*Dose_amount">
+        <Paths>
+          <Path path="25" as="26" dim="27" />
+          <Path path="23" as="24" />
+        </Paths>
+      </Formula>
+      <Formula id="-jMIIsTA1k2_RqoAgOhODw" name="add_timed_dose_condition" formula="Time &gt; Dose_time + dt">
         <Paths>
           <TimePath />
-          <Path path="22" as="23" dim="24" />
-          <Path path="25" as="26" dim="24" />
+          <Path path="55" as="56" dim="57" />
+          <Path path="58" as="59" dim="57" />
         </Paths>
       </Formula>
-      <Formula id="49483865-b10d-4555-8754-c0d08971f4a7" name="dep1_asmt_formula" dim="Amount" formula="( ( case = 2 ) OR ( case = 4) ) ?  (C_sat/MW)*Ar*dx : (  (case = 3)  ? ( Dose_amount + A1 + A2 + A3 + A4     )*(C_sat*dx)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) :  A1 + ( Dose_amount / no_layers_dep_zone )       )">
+      <Formula id="FwX8OYige0ONwBbj2vr_1Q" name="Mass_dose_per_area_formula" dim="Mass per area" formula="Dose">
         <Paths>
-          <Path path="19" as="20" dim="21" />
-          <Path path="27" as="28" dim="29" />
-          <Path path="30" as="31" dim="32" />
-          <Path path="16" as="17" dim="18" />
-          <Path path="33" as="34" dim="35" />
-          <Path path="36" as="37" dim="32" />
-          <Path path="38" as="39" dim="32" />
-          <Path path="40" as="41" dim="42" />
-          <Path path="43" as="44" />
-          <Path path="6" as="45" />
-          <Path path="7" as="46" dim="29" />
-          <Path path="8" as="47" dim="29" />
-          <Path path="9" as="48" dim="29" />
-          <Path path="10" as="49" dim="29" />
-          <Path path="11" as="50" dim="29" />
-          <Path path="12" as="51" dim="29" />
+          <Path path="60" as="61" dim="16" />
         </Paths>
       </Formula>
-      <Formula id="04225e5b-8926-4575-b509-a3ad8d813eef" name="dep2_asmt_formula" dim="Amount" formula="no_layers_dep_zone = 1 ? A2 : (  ( (case = 2) OR (case = 4) ) ?  (C_sat/MW)*Ar*dx : (  (case = 3)  ? ( Dose_amount + A1 + A2 + A3 + A4    )*(C_sat*dx)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) :  A2+ ( Dose_amount / no_layers_dep_zone )       ))">
+      <Formula id="OcMUIo8W8k-2ch9ClC8Htg" name="case_no_estimate_asmt_formula" formula="( (vol=0) AND (Vehicle_type &lt;&gt; 0) )  ?  ( (  ( (Dose_amount + A1 + A2 + A3 + A4   )*MW )    &gt; deposit_capacity ) ?  4 :   3 )  :  ( (  ( (Dose_amount + A1 + A2 + A3 + A4   )*MW )   &gt; deposit_capacity  ) ?  2 : 1 )">
         <Paths>
-          <Path path="19" as="20" dim="21" />
-          <Path path="27" as="28" dim="29" />
-          <Path path="30" as="31" dim="32" />
-          <Path path="16" as="17" dim="18" />
-          <Path path="33" as="34" dim="35" />
-          <Path path="36" as="37" dim="32" />
-          <Path path="38" as="39" dim="32" />
-          <Path path="40" as="41" dim="42" />
-          <Path path="43" as="44" />
-          <Path path="6" as="45" />
-          <Path path="7" as="46" dim="29" />
-          <Path path="8" as="47" dim="29" />
-          <Path path="9" as="48" dim="29" />
-          <Path path="10" as="49" dim="29" />
-          <Path path="11" as="50" dim="29" />
-          <Path path="12" as="51" dim="29" />
+          <Path path="50" as="51" dim="52" />
+          <Path path="20" as="21" dim="22" />
+          <Path path="25" as="26" dim="27" />
+          <Path path="28" as="29" dim="30" />
+          <Path path="17" as="18" dim="19" />
+          <Path path="53" as="54" dim="52" />
+          <Path path="34" as="35" dim="30" />
+          <Path path="36" as="37" dim="30" />
+          <Path path="38" as="39" dim="40" />
+          <Path path="62" as="63" />
+          <Path path="64" as="65" />
+          <Path path="41" as="42" />
+          <Path path="31" as="32" dim="33" />
+          <Path path="0" as="44" dim="27" />
+          <Path path="1" as="45" dim="27" />
+          <Path path="2" as="46" dim="27" />
+          <Path path="3" as="47" dim="27" />
+          <Path path="5" as="49" dim="27" />
+          <Path path="4" as="48" dim="27" />
         </Paths>
       </Formula>
-      <Formula id="4929333c-7f89-4e67-91ad-9b759fc5cf91" name="dep3_asmt_formula" dim="Amount" formula="no_layers_dep_zone = 1 ? A3 : (  ( (case = 2) OR (case = 4) ) ?  (C_sat/MW)*Ar*dx : (  (case = 3)  ? ( Dose_amount + A1 + A2 + A3 + A4    )*(C_sat*dx)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) :  A3+ ( Dose_amount / no_layers_dep_zone )       ))">
+      <Formula id="cvFsusopl0CYsz-ozEGOIw" name="prestep_dep1_asmt_formula" dim="Amount" formula="MOLECULE">
         <Paths>
-          <Path path="19" as="20" dim="21" />
-          <Path path="27" as="28" dim="29" />
-          <Path path="30" as="31" dim="32" />
-          <Path path="16" as="17" dim="18" />
-          <Path path="33" as="34" dim="35" />
-          <Path path="36" as="37" dim="32" />
-          <Path path="38" as="39" dim="32" />
-          <Path path="40" as="41" dim="42" />
-          <Path path="43" as="44" />
-          <Path path="6" as="45" />
-          <Path path="7" as="46" dim="29" />
-          <Path path="8" as="47" dim="29" />
-          <Path path="9" as="48" dim="29" />
-          <Path path="10" as="49" dim="29" />
-          <Path path="11" as="50" dim="29" />
-          <Path path="12" as="51" dim="29" />
+          <Path path="0" as="66" dim="27" />
         </Paths>
       </Formula>
-      <Formula id="fab46542-dc8d-4575-b909-311edd3445fe" name="dep4_asmt_formula" dim="Amount" formula="no_layers_dep_zone = 1 ? A4 : (  ( (case = 2) OR (case = 4) ) ?  (C_sat/MW)*Ar*dx : (  (case = 3)  ? ( Dose_amount + A1 + A2 + A3 + A4    )*(C_sat*dx)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) :  A4 + ( Dose_amount / no_layers_dep_zone )       ))">
+      <Formula id="fPnG183ifku3iGqw6pylnw" name="prestep_dep2_asmt_formula" dim="Amount" formula="MOLECULE">
         <Paths>
-          <Path path="19" as="20" dim="21" />
-          <Path path="27" as="28" dim="29" />
-          <Path path="30" as="31" dim="32" />
-          <Path path="16" as="17" dim="18" />
-          <Path path="33" as="34" dim="35" />
-          <Path path="36" as="37" dim="32" />
-          <Path path="38" as="39" dim="32" />
-          <Path path="40" as="41" dim="42" />
-          <Path path="43" as="44" />
-          <Path path="6" as="45" />
-          <Path path="7" as="46" dim="29" />
-          <Path path="8" as="47" dim="29" />
-          <Path path="9" as="48" dim="29" />
-          <Path path="10" as="49" dim="29" />
-          <Path path="11" as="50" dim="29" />
-          <Path path="12" as="51" dim="29" />
+          <Path path="1" as="66" dim="27" />
         </Paths>
       </Formula>
-      <Formula id="64ce7f61-de15-4c4d-81ea-a916d589b3e0" name="veh_asmt_formula" dim="Amount" formula="(  (case = 3) OR (case = 4)  ) ? ( ( case = 4 ) ?  V_sat/MW :   ( ( Dose_amount +  A1 + A2 + A3 + A4    )*(h_v*Solubility_S_v)/( (h_v*Solubility_S_v) + (h_d*C_sat) ) ) ) : ( (case = 2) ?   ((Dose_amount  + A1 + A2 + A3 + A4  )  - (deposit_capacity /MW) )   : 0 )">
+      <Formula id="H0sOqF2iAEO2KZ2Fj-GEDg" name="prestep_dep3_asmt_formula" dim="Amount" formula="MOLECULE">
         <Paths>
-          <Path path="52" as="53" dim="54" />
-          <Path path="19" as="20" dim="21" />
-          <Path path="27" as="28" dim="29" />
-          <Path path="30" as="31" dim="32" />
-          <Path path="16" as="17" dim="18" />
-          <Path path="55" as="56" dim="54" />
-          <Path path="36" as="37" dim="32" />
-          <Path path="38" as="39" dim="32" />
-          <Path path="40" as="41" dim="42" />
-          <Path path="43" as="44" />
-          <Path path="33" as="34" dim="35" />
-          <Path path="6" as="45" />
-          <Path path="7" as="46" dim="29" />
-          <Path path="8" as="47" dim="29" />
-          <Path path="9" as="48" dim="29" />
-          <Path path="10" as="49" dim="29" />
-          <Path path="11" as="50" dim="29" />
-          <Path path="12" as="51" dim="29" />
+          <Path path="2" as="66" dim="27" />
         </Paths>
       </Formula>
-      <Formula id="ead70a2d-44fa-45e6-8977-42aa1233e5d8" name="surface_pool_asmt_formula" dim="Amount" formula="( (case = 3) OR (case = 4) ) ? ( ( case = 4 ) ? ( (Dose_amount + A1 + A2 + A3 + A4   ) - (deposit_capacity/MW) ) : 0 ) : 0">
+      <Formula id="UrXukX1xuk6fBGoFK4xJzA" name="prestep_dep4_asmt_formula" dim="Amount" formula="MOLECULE">
         <Paths>
-          <Path path="52" as="53" dim="54" />
-          <Path path="19" as="20" dim="21" />
-          <Path path="27" as="28" dim="29" />
-          <Path path="6" as="45" />
-          <Path path="7" as="46" dim="29" />
-          <Path path="8" as="47" dim="29" />
-          <Path path="9" as="48" dim="29" />
-          <Path path="10" as="49" dim="29" />
-          <Path path="11" as="50" dim="29" />
-          <Path path="12" as="51" dim="29" />
+          <Path path="3" as="66" dim="27" />
         </Paths>
       </Formula>
-      <Formula id="02b7e130-2b59-4338-a3db-00743b4a8d1a" name="deposit_capacity_formula" dim="Mass" formula=" (vol=0) AND (Vehicle_type &lt;&gt; 0) ? M_sat + V_sat  : M_sat">
+      <Formula id="qeAYPdfHT0OzgT_AyfQgKA" name="prestep_veh_asmt_formula" dim="Amount" formula="MOLECULE">
         <Paths>
-          <Path path="57" as="58" />
-          <Path path="59" as="60" />
-          <Path path="61" as="62" dim="54" />
-          <Path path="55" as="56" dim="54" />
+          <Path path="4" as="66" dim="27" />
         </Paths>
       </Formula>
-      <Formula id="b2a801ec-bd0e-4b27-bed2-c1723d1449ad" name="Mass_dose_per_area_formula" dim="Mass per area" formula="Dose">
+      <Formula id="QC0aCAWVIkuNqzqQjHQ2AA" name="prestep_sp_asmt_formula" dim="Amount" formula="MOLECULE">
         <Paths>
-          <Path path="63" as="64" dim="65" />
+          <Path path="5" as="66" dim="27" />
         </Paths>
       </Formula>
-      <Formula id="cdabd8f3-40f1-431c-bfbf-20b00bab3ee1" name="case_no_estimate_condition" formula="Time &gt; Dose_time">
+      <Formula id="QtzndZFHx0eKuQ1VpKd1aA" name="case_no_estimate_condition" formula="Time &gt; Dose_time">
         <Paths>
-          <Path path="22" as="23" dim="24" />
+          <Path path="55" as="56" dim="57" />
           <TimePath />
-        </Paths>
-      </Formula>
-      <Formula id="4b9b3707-1cec-4787-807c-11c552173fde" name="case_no_estimate_asmt_formula" formula="( (vol=0) AND (Vehicle_type &lt;&gt; 0) )  ?  ( (  ( (Dose_amount + A1 + A2 + A3 + A4   )*MW )    &gt; deposit_capacity ) ?  4 :   3 )  :  ( (  ( (Dose_amount + A1 + A2 + A3 + A4   )*MW )   &gt; deposit_capacity  ) ?  2 : 1 )">
-        <Paths>
-          <Path path="52" as="53" dim="54" />
-          <Path path="19" as="20" dim="21" />
-          <Path path="27" as="28" dim="29" />
-          <Path path="30" as="31" dim="32" />
-          <Path path="16" as="17" dim="18" />
-          <Path path="55" as="56" dim="54" />
-          <Path path="36" as="37" dim="32" />
-          <Path path="38" as="39" dim="32" />
-          <Path path="40" as="41" dim="42" />
-          <Path path="57" as="58" />
-          <Path path="59" as="60" />
-          <Path path="43" as="44" />
-          <Path path="33" as="34" dim="35" />
-          <Path path="0" as="46" dim="29" />
-          <Path path="1" as="47" dim="29" />
-          <Path path="2" as="48" dim="29" />
-          <Path path="3" as="49" dim="29" />
-          <Path path="5" as="51" dim="29" />
-          <Path path="4" as="50" dim="29" />
-        </Paths>
-      </Formula>
-      <Formula id="eba5a8d3-ed40-416f-a89e-152422691185" name="prestep_dep1_asmt_formula" dim="Amount" formula="MOLECULE">
-        <Paths>
-          <Path path="0" as="66" dim="29" />
-        </Paths>
-      </Formula>
-      <Formula id="27dbfb99-ac4a-496c-943e-d406cfcb32c3" name="prestep_dep2_asmt_formula" dim="Amount" formula="MOLECULE">
-        <Paths>
-          <Path path="1" as="66" dim="29" />
-        </Paths>
-      </Formula>
-      <Formula id="b139073e-063b-461f-9953-deaad60791f6" name="prestep_dep3_asmt_formula" dim="Amount" formula="MOLECULE">
-        <Paths>
-          <Path path="2" as="66" dim="29" />
-        </Paths>
-      </Formula>
-      <Formula id="d7fd0866-ac77-4c8d-8166-ae3a3ee39812" name="prestep_dep4_asmt_formula" dim="Amount" formula="MOLECULE">
-        <Paths>
-          <Path path="3" as="66" dim="29" />
-        </Paths>
-      </Formula>
-      <Formula id="19869efd-39f8-414e-bcfb-83e99490d856" name="prestep_veh_asmt_formula" dim="Amount" formula="MOLECULE">
-        <Paths>
-          <Path path="4" as="66" dim="29" />
-        </Paths>
-      </Formula>
-      <Formula id="634ea813-4ad8-4fe8-881d-550a4678e183" name="prestep_sp_asmt_formula" dim="Amount" formula="MOLECULE">
-        <Paths>
-          <Path path="5" as="66" dim="29" />
         </Paths>
       </Formula>
     </Formulas>
@@ -389,66 +370,66 @@
       <Map s="DERMAL_APPLICATION_AREA|skin_compartment|SC_skin_sublayer|comp10_1|layer4|MOLECULE" id="3" />
       <Map s="DERMAL_APPLICATION_AREA|vehicle|MOLECULE" id="4" />
       <Map s="DERMAL_APPLICATION_AREA|surface_pool|MOLECULE" id="5" />
-      <Map s="..|..|..|case_no_estimate" id="6" />
-      <Map s="..|..|..|prestep_dep1" id="7" />
-      <Map s="..|..|..|prestep_dep2" id="8" />
-      <Map s="..|..|..|prestep_dep3" id="9" />
-      <Map s="..|..|..|prestep_dep4" id="10" />
-      <Map s="..|..|..|prestep_veh" id="11" />
-      <Map s="..|..|..|prestep_sp" id="12" />
-      <Map s="..|Mass_dose_per_area" id="13" />
-      <Map s="Mass_dose_per_area" id="14" />
-      <Map s="Mass per area" id="15" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Area of application" id="16" />
-      <Map s="Ar" id="17" />
-      <Map s="Area" id="18" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|MW" id="19" />
-      <Map s="MW" id="20" />
-      <Map s="Molecular weight" id="21" />
-      <Map s="..|Dose_time" id="22" />
-      <Map s="Dose_time" id="23" />
-      <Map s="Time" id="24" />
-      <Map s="..|dt" id="25" />
-      <Map s="dt" id="26" />
-      <Map s="..|..|Dose_amount" id="27" />
-      <Map s="Dose_amount" id="28" />
-      <Map s="Amount" id="29" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|SC_skin_sublayer|one_layer_thickness" id="30" />
-      <Map s="dx" id="31" />
-      <Map s="Length" id="32" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|C_sat" id="33" />
-      <Map s="C_sat" id="34" />
-      <Map s="Concentration (mass)" id="35" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|thickness_of_deposition_zone" id="36" />
-      <Map s="h_d" id="37" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Vehicle thickness" id="38" />
-      <Map s="h_v" id="39" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Solubility S_v" id="40" />
-      <Map s="Solubility_S_v" id="41" />
-      <Map s="Density" id="42" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|no_layers_in_deposition_zone" id="43" />
-      <Map s="no_layers_dep_zone" id="44" />
-      <Map s="case" id="45" />
-      <Map s="A1" id="46" />
-      <Map s="A2" id="47" />
-      <Map s="A3" id="48" />
-      <Map s="A4" id="49" />
-      <Map s="veh" id="50" />
-      <Map s="sp" id="51" />
-      <Map s="..|..|..|deposit_capacity" id="52" />
-      <Map s="deposit_capacity" id="53" />
-      <Map s="Mass" id="54" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|V_sat" id="55" />
-      <Map s="V_sat" id="56" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Vehicle type" id="57" />
-      <Map s="Vehicle_type" id="58" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Volatile vehicle" id="59" />
-      <Map s="vol" id="60" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|M_sat" id="61" />
-      <Map s="M_sat" id="62" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Dose" id="63" />
-      <Map s="Dose" id="64" />
-      <Map s="Dose per body surface area" id="65" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Follicle|MOLECULE" id="6" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|case_no_estimate" id="7" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|prestep_dep1" id="8" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|prestep_dep2" id="9" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|prestep_dep3" id="10" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|prestep_dep4" id="11" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|prestep_veh" id="12" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|prestep_sp" id="13" />
+      <Map s="..|Mass_dose_per_area" id="14" />
+      <Map s="Mass_dose_per_area" id="15" />
+      <Map s="Mass per area" id="16" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Area of application" id="17" />
+      <Map s="Ar" id="18" />
+      <Map s="Area" id="19" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|MW" id="20" />
+      <Map s="MW" id="21" />
+      <Map s="Molecular weight" id="22" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Follicle|fraction_dose_entering_follicles" id="23" />
+      <Map s="f" id="24" />
+      <Map s="..|..|Dose_amount" id="25" />
+      <Map s="Dose_amount" id="26" />
+      <Map s="Amount" id="27" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|SC_skin_sublayer|one_layer_thickness" id="28" />
+      <Map s="dx" id="29" />
+      <Map s="Length" id="30" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|C_sat" id="31" />
+      <Map s="C_sat" id="32" />
+      <Map s="Concentration (mass)" id="33" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|thickness_of_deposition_zone" id="34" />
+      <Map s="h_d" id="35" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Vehicle thickness" id="36" />
+      <Map s="h_v" id="37" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Solubility S_v" id="38" />
+      <Map s="Solubility_S_v" id="39" />
+      <Map s="Density" id="40" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|no_layers_in_deposition_zone" id="41" />
+      <Map s="no_layers_dep_zone" id="42" />
+      <Map s="case" id="43" />
+      <Map s="A1" id="44" />
+      <Map s="A2" id="45" />
+      <Map s="A3" id="46" />
+      <Map s="A4" id="47" />
+      <Map s="veh" id="48" />
+      <Map s="sp" id="49" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|deposit_capacity" id="50" />
+      <Map s="deposit_capacity" id="51" />
+      <Map s="Mass" id="52" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|V_sat" id="53" />
+      <Map s="V_sat" id="54" />
+      <Map s="..|Dose_time" id="55" />
+      <Map s="Dose_time" id="56" />
+      <Map s="Time" id="57" />
+      <Map s="..|dt" id="58" />
+      <Map s="dt" id="59" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Dose" id="60" />
+      <Map s="Dose" id="61" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Vehicle type" id="62" />
+      <Map s="Vehicle_type" id="63" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Volatile vehicle" id="64" />
+      <Map s="vol" id="65" />
       <Map s="MOLECULE" id="66" />
     </StringMap>
   </FormulaCache>
