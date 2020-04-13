@@ -43,12 +43,12 @@
     <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Skin temperature</Favorite>
     <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|DE_skin_sublayer|DE_total_thickness</Favorite>
     <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Hydrated SC</Favorite>
-    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|In vivo</Favorite>
+	<Favorite>DERMAL_APPLICATION_AREA|skin_compartment|DE_skin_sublayer|Dermis thickness</Favorite>
+	<Favorite>DERMAL_APPLICATION_AREA|skin_compartment|In vivo</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Follicle|Fraction dose entering follicles</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Follicle|Follicle compartment volume per area of skin</Favorite>
+    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Follicle|Follicle clearance</Favorite>
     <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|V_max</Favorite>
     <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|K_M</Favorite>
-    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|SC_skin_sublayer|follicle_fraction</Favorite>
-    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Follicle|follicle_clearance</Favorite>
-    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Follicle|follicle_compartment_volume_per_cm2_skin</Favorite>
-    <Favorite>DERMAL_APPLICATION_AREA|skin_compartment|Follicle|fraction_dose_entering_follicles</Favorite>
   </All>
 </Favorites>
