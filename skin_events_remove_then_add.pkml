@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<EventGroupBuildingBlock id="IXoicLY8hUe9wzCv46DIkQ" name="skin_events_two_doses" icon="EventGroup" bbVersion="52" version="13">
+<EventGroupBuildingBlock id="IXoicLY8hUe9wzCv46DIkQ" name="skin_events_two_doses" icon="EventGroup" bbVersion="55" version="14">
   <Creation createdAt="5248872475995609325" createdBy="ahamadeh" creationMode="New" origin="MoBi" version="8.0" internalVersion="13" />
   <Builders>
     <EventGroupBuilder id="pEhlQ87PNEKTgw6gOSfYnQ" name="Applications" icon="APPLICATIONS" mode="Logical" containerType="EventGroup">
       <Children>
-        <ApplicationBuilder id="1mIBVSFiIkeDwZgjhZokQg" name="skin_application" icon="APPLICATION" mode="Logical" containerType="Application" moleculeName="permeant_compound">
+        <ApplicationBuilder id="1mIBVSFiIkeDwZgjhZokQg" name="skin_application" icon="APPLICATION" mode="Logical" containerType="Application" moleculeName="permeant">
           <Children>
             <EventGroupBuilder id="cLdI1NQz60SITfuzUHvFPw" name="event_with_dose_mass_from_spatial_structure" icon="EVENTGROUP" mode="Logical" containerType="EventGroup">
               <Children>
@@ -387,7 +387,7 @@
       <Map s="DERMAL_APPLICATION_AREA|skin_compartment|MW" id="20" />
       <Map s="MW" id="21" />
       <Map s="Molecular weight" id="22" />
-      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Follicle|fraction_dose_entering_follicles" id="23" />
+      <Map s="DERMAL_APPLICATION_AREA|skin_compartment|Follicle|Fraction dose entering follicles" id="23" />
       <Map s="f" id="24" />
       <Map s="..|..|Dose_amount" id="25" />
       <Map s="Dose_amount" id="26" />
